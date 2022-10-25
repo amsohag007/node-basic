@@ -6,5 +6,6 @@ fs.readFile("./read.txt", "utf-8", (err, data) => {
 });
 
 fs.writeFile("./write.txt", "hello", (err) => {
+  if (err) console.log("error has occurred during writting into file ", err);
   console.log("your file has been written");
 });
